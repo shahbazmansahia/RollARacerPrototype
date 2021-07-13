@@ -14,7 +14,7 @@ public class DestroyObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((transform.position.z < backBoundary) && (gameObject.CompareTag("Obstacle")))
+        if (transform.position.z < backBoundary)
         {
             Destroy(gameObject);
         }
